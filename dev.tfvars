@@ -1,0 +1,7 @@
+aws_region = "us-east-1"
+aws_cidr_block_vpc = "10.0.0.0/16"
+aws_cidr_block_subnet = "10.0.0.0/24"
+aws_availability_zone = "us-east-1a"
+aws_ami = "ami-04b70fa74e45c3917"
+aws_instance_type = "t2.micro"
+aws_key_pair = "Hello"
