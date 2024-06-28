@@ -83,15 +83,4 @@ resource "aws_instance" "ak-instance" {
     source = "/home/anandhakumar/terra/app.py"
     destination = "/home/ubuntu/app.py"
   }
-
-  provisioner "remote-exec" {
-    inline = [ 
-    "echo 'Hello from AK!'",
-    "sudo apt update -y",
-    "sudo apt-get install python3-pip",
-    "cd /home/ubuntu",
-    "sudo pip3 install flask",
-    "sudo python3 app.py &",
-    ]
-  }
 }
